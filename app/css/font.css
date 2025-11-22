@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Bold"), local("Quicksand-Bold"), url("../assets/fonts/Quicksand-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Quicksand-Bold.woff") format("woff"),
+    url("../assets/fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Regular"), local("Quicksand-Regular"),
+    url("../assets/fonts/Quicksand-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Quicksand-Regular.woff") format("woff"),
+    url("../assets/fonts/Quicksand-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Light"), local("Quicksand-Light"), url("../assets/fonts/Quicksand-Light.woff2") format("woff2"),
+    url("../assets/fonts/Quicksand-Light.woff") format("woff"),
+    url("../assets/fonts/Quicksand-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand Medium"), local("Quicksand-Medium"),
+    url("../assets/fonts/Quicksand-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Quicksand-Medium.woff") format("woff"),
+    url("../assets/fonts/Quicksand-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand SemiBold"), local("Quicksand-SemiBold"),
+    url("../assets/fonts/Quicksand-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/Quicksand-SemiBold.woff") format("woff"),
+    url("../assets/fonts/Quicksand-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kaisei Decol";
+  src: local("Kaisei Decol Bold"), local("KaiseiDecol-Bold"),
+    url("../assets/fonts/KaiseiDecol-Bold.woff2") format("woff2"),
+    url("../assets/fonts/KaiseiDecol-Bold.woff") format("woff"),
+    url("../assets/fonts/KaiseiDecol-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kaisei Decol";
+  src: local("Kaisei Decol Medium"), local("KaiseiDecol-Medium"),
+    url("../assets/fonts/KaiseiDecol-Medium.woff2") format("woff2"),
+    url("../assets/fonts/KaiseiDecol-Medium.woff") format("woff"),
+    url("../assets/fonts/KaiseiDecol-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kaisei Decol";
+  src: local("Kaisei Decol Regular"), local("KaiseiDecol-Regular"),
+    url("../assets/fonts/KaiseiDecol-Regular.woff2") format("woff2"),
+    url("../assets/fonts/KaiseiDecol-Regular.woff") format("woff"),
+    url("../assets/fonts/KaiseiDecol-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-kaisei-decol {
+  font-family: "Kaisei Decol", sans-serif;
+  font-display: swap;
+}
+
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-display: swap;
+}
