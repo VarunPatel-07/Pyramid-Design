@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`antialiased bg-(--theme-bg-color)`}>
+      <body className={`antialiased bg-(--color-bg)`}>
         <Navbar />
-        <section>{children}</section>
+        {children}
       </body>
     </html>
   );
