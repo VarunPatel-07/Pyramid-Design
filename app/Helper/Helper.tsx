@@ -1,6 +1,7 @@
 "use client";
 import validator from "validator";
 import Cleave from "cleave.js";
+import { Variants } from "motion/react";
 
 import { phoneFormats } from "../Constant/NumberFormate";
 export const classNames = (defaultClass: string, conditionBasedClass: { [keys: string]: boolean }) => {
@@ -8,7 +9,7 @@ export const classNames = (defaultClass: string, conditionBasedClass: { [keys: s
     .filter((key) => conditionBasedClass[key])
     .join(" ")}`;
 };
-
+export const noAnimation: Variants = { hidden: {}, show: {} };
 export const IsOdd = (num: number) => num % 2 !== 0;
 
 export function getServiceBg(index: number) {

@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`antialiased bg-(--color-bg)`}>
+      <body className={`antialiased bg-(--color-bg) overflow-x-hidden`}>
         <Navbar />
         {children}
       </body>

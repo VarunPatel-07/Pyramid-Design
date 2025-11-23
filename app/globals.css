@@ -10,6 +10,9 @@
   --color-gold-dark: #c79100;
   --color-text: #2c2c2c;
   --color-gray-light: #e5e5e5;
+  --blur-blue-ellipse: #5172e820;
+  --color-text-secondary: #2c2c2cba;
+  --theme-dark-color: #1e1219;
 }
 
 @theme inline {
@@ -21,11 +24,7 @@
 html {
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-}
+
 @media only screen and (max-width: 768px) {
   .navbar-custom-css {
     position: fixed;
@@ -88,4 +87,17 @@ html {
 
 .animate-marquee-reverse {
   animation: marquee-reverse 15s linear infinite;
+}
+
+.bg-hero-bg {
+  background-image: url(./assets/images/rectangle-vector.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-meet-our-team {
+  background-image: url(./assets/images/meet-our-teem-vector.png);
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
