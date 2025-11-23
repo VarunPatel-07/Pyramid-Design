@@ -38,7 +38,7 @@ function Navbar() {
   const backgroundColor = useTransform(scrollY, [0, 100], ["rgba(255, 255, 255, 0)", "rgba(255, 255, 255, 0.95)"]);
   return (
     <motion.nav
-      className="w-full sticky top-0 left-0 bg-transparent z-50 mx-auto border-b border-b-gray-100 md:border-b-0"
+      className="w-full sticky top-0 left-0 bg-transparent z-50 mx-auto border-b border-b-gray-100 md:border-b-0 max-w-[1560px]"
       initial={{ y: 0 }}
       style={isDesktopScreen ? { width: "100% !important" } : { backgroundColor: "var(--color-bg)" }}
       animate={
@@ -46,7 +46,7 @@ function Navbar() {
           ? {
               y: 0,
               paddingTop: isScrolled ? "16px" : "0px",
-              width: isScrolled ? "calc(100% - 100px)" : "100%",
+              width: isScrolled ? "95%" : "100%",
             }
           : {}
       }
