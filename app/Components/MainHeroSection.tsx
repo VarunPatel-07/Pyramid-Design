@@ -51,7 +51,7 @@ function MainHeroSection() {
   if (!isReady) return <div className="h-screen"></div>;
   return (
     <motion.div
-      className="w-full h-full pt-10 xl:pt-[90px] relative overflow-hidden"
+      className="w-full h-full pt-10 xl:pt-22.5 relative overflow-hidden hidden lg:block"
       variants={isDesktopScreen ? container : noAnimation}
       initial={isDesktopScreen ? "hidden" : undefined}
       animate={isDesktopScreen ? "show" : undefined}>
@@ -71,7 +71,7 @@ function MainHeroSection() {
                     height={80}
                     alt="Quote"
                     aria-label="Quote"
-                    className="absolute -bottom-1/2 right-10"
+                    className="absolute -bottom-1/2 right-10 pointer-events-none"
                     loading="eager"
                   />
                 </div>

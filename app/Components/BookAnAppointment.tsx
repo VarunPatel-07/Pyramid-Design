@@ -7,7 +7,7 @@ function BookAnAppointment() {
   return (
     <div className="w-full h-full">
       <div className="pyramid-design-container">
-        <div className="py-14 px-14 rounded-3xl backdrop-blur-sm bg-(--color-gray-light) ">
+        <div className="py-14 px-14 rounded-3xl backdrop-blur-sm bg-(--color-gray-light)">
           <div className="flex flex-col items-start justify-start gap-10">
             <h2 className="font-kaisei-decol text-[50px] leading-16 font-medium text-(--color-text)">
               We provide the best architecture
@@ -29,7 +29,7 @@ function BookAnAppointment() {
                   title="contact"
                   aria-label="contact"
                   className={classNames(
-                    "font-quicksand text-lg text-(--color-text) items-center justify-center pt-2.5 pb-3 px-6 rounded-lg capitalize bg-transparent border border-(--color-text)  group transition-all hidden md:flex font-semibold hover:bg-(--color-bg) hover:border-(--color-bg)",
+                    "font-quicksand text-lg text-(--color-text) items-center justify-center pt-2.5 pb-3 px-6 rounded-lg capitalize bg-transparent border border-(--color-text)  group transition-all hidden md:flex font-semibold hover:bg-(--color-bg) hover:border-(--color-bg) hover:shadow-[0_0_15px_1px_#ffd54f5b]",
                     {}
                   )}>
                   <span className="flex items-center justify-start gap-3">

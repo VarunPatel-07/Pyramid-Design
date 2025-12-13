@@ -2,7 +2,7 @@ import { ourImpactInNumberArray } from "../Constant/Constant";
 
 function OurImpactInNumber() {
   return (
-    <div className="w-full h-full pt-12">
+    <div className="w-full h-full">
       <div className="pyramid-design-container">
         <div className="w-full flex items-center justify-center">
           <h2 className="font-kaisei-decol text-5xl leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold">

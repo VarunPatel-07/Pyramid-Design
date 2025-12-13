@@ -4,7 +4,7 @@ import demoImage from "@/app/assets/images/ares.png";
 function OurTeamSection() {
   // const ourTeamIntroSection = {}
   return (
-    <div className="w-full h-full pb-10 xl:pb-[150px]">
+    <div className="w-full h-full pb-10 xl:pb-40">
       <div className="pyramid-design-container">
         <div className="w-full flex items-center justify-center">
           <h2 className="font-kaisei-decol text-5xl leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold">
@@ -16,7 +16,7 @@ function OurTeamSection() {
           <div className="w-full flex items-stretch justify-start flex-wrap gap-10">
             {Array?.from({ length: 6 })?.map((_, index) => (
               <div
-                className="w-[31%] overflow-hidden rounded-3xl hover:translate-y-2 transition-all duration-500 relative cursor-pointer group"
+                className=" w-full lg:w-[48%] xl:w-[31%] overflow-hidden rounded-3xl hover:translate-y-2 transition-all duration-500 relative cursor-pointer group"
                 key={index}>
                 <Image
                   src={demoImage}
