@@ -1,13 +1,13 @@
-import AboutUsSection from "./Components/AboutUsSection";
-import BlurEllipseBlue from "./Components/BlurEllipseBlue";
-import BookAnAppointment from "./Components/BookAnAppointment";
-import ClientTestimonial from "./Components/ClientTestimonial";
-import MainHeroSection from "./Components/MainHeroSection";
-import MarqueeSlider from "./Components/MarqueSlider";
-import OurImpactInNumber from "./Components/OurImpactInNumber";
-import OurProjects from "./Components/OurProjects";
-import OurTeamSection from "./Components/OurTeamSection";
-import PyramidDesignContactForm from "./Components/PyramidDesignContactForm";
+import AboutUsSection from "./components/AboutUsSection";
+import BlurEllipseBlue from "./components/BlurEllipseBlue";
+import BookAnAppointment from "./components/BookAnAppointment";
+import ClientTestimonial from "./components/ClientTestimonial";
+import MainHeroSection from "./components/MainHeroSection";
+import MarqueeSlider from "./components/MarqueSlider";
+import OurImpactInNumber from "./components/OurImpactInNumber";
+import OurProjects from "./components/OurProjects";
+import OurTeamSection from "./components/OurTeamSection";
+import PyramidDesignContactForm from "./components/PyramidDesignContactForm";
 
 function page() {
   return (

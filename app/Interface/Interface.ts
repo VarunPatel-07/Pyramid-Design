@@ -74,3 +74,9 @@ export interface OurCoreValuesArrayInterface {
   title: string;
   description: string;
 }
+
+export interface CommonHeaderInterface {
+  title: string;
+  description: string;
+  maxWidth: string;
+}

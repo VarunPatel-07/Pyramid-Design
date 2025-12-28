@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "./Components/Navbar/Navbar";
-import { NotificationContextApiProvider } from "./Context/Notification/NotificationContextApi";
-import Notification from "./Components/common/Notification/Notification";
-import Footer from "./Components/Footer";
+import "./css/globals.css";
+import Navbar from "./components/navbar/Navbar";
+import { NotificationContextApiProvider } from "./context/notification/NotificationContextApi";
+import Notification from "./components/common/Notification/Notification";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Pyramid Design | Architecture & Interior Design Studio",

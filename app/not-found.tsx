@@ -1,9 +1,8 @@
 import Link from "next/link";
 
 import { Metadata } from "next";
-import LottieAnimation from "./Components/LottieAnimation";
+import LottieAnimation from "./components/LottieAnimation";
 import { IoArrowForward } from "react-icons/io5";
-
 
 export const metadata: Metadata = {
   title: "Page Not Found | Think Arq - Think Build Disrupt",
