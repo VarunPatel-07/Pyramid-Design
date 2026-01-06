@@ -1,15 +1,15 @@
 "use client";
 import Link from "next/link";
-import { classNames } from "../helper/Helper";
 import { IoArrowForward } from "react-icons/io5";
+import { classNames } from "../helper/Helper";
 
 function BookAnAppointment() {
   return (
     <div className="w-full h-full">
       <div className="pyramid-design-container">
-        <div className="py-14 px-14 rounded-3xl backdrop-blur-sm bg-(--color-gray-light)">
+        <div className="p-6 md:p-8 lg:p-10 xl:p-14 rounded-lg md:rounded-xl lg:rounded-2xl xl:rounded-3xl backdrop-blur-sm bg-(--color-gray-light)">
           <div className="flex flex-col items-start justify-start gap-10">
-            <h2 className="font-kaisei-decol text-[50px] leading-16 font-medium text-(--color-text)">
+            <h2 className="font-kaisei-decol text-2xl lg:text-3xl xl:text-[50px] leading-10 lg:leading-11 xl:leading-16 font-medium text-(--color-text)">
               We provide the best architecture
               <span className="block">
                 design that is

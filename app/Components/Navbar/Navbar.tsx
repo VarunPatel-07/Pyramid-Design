@@ -80,7 +80,7 @@ function Navbar() {
           }
           transition={{ duration: 0.3, ease: "easeInOut" }}>
           <Link href={"/"} title="ThinkArq Logo" aria-label="ThinkArq Logo" className="w-fit h-fit -ml-1">
-            <Image src={PyramidDesignLogo} alt="ThinkArq Logo" title="ThinkArq Logo" width={140} height={45} />
+            <Image src={PyramidDesignLogo} alt="ThinkArq Logo" title="ThinkArq Logo" width={140} height={45} className="max-w-20" />
           </Link>
           <div
             className={classNames("w-fit h-fit flex gap-5 text-lg font-medium navbar-custom-css ", {
@@ -89,7 +89,7 @@ function Navbar() {
             <div className="w-fit h-fit flex gap-5 text-lg font-medium navbar-inner-wrapper">
               <div className="w-full flex items-center justify-between md:hidden">
                 <div className="w-fit h-fit">
-                  <Image title="ThinkArq Logo" src={PyramidDesignLogo} alt="ThinkArq Logo" width={140} height={50} />
+                  <Image title="ThinkArq Logo" src={PyramidDesignLogo} alt="ThinkArq Logo" width={140} height={50} className="max-w-20" />
                 </div>
                 <button className="mt-1 cursor-pointer" onClick={() => setShowMobileNavbar(false)}>
                   <IoIosCloseCircleOutline className="min-w-7 min-h-7" />

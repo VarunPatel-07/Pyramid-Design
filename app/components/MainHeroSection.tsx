@@ -1,12 +1,13 @@
 "use client";
-import Image from "next/image";
-import { motion, Variants } from "motion/react";
-import { useEffect, useState } from "react";
-import { noAnimation } from "../helper/Helper";
+import HeroMobileImage from "@/app/assets/images/hero-mobile.png";
 import HeroSectionImage from "@/app/assets/images/hero-section-image.webp";
 import HeroVectorOne from "@/app/assets/images/svg/hero-vector-one.svg";
 import Quote from "@/app/assets/images/svg/quote.svg";
 import StarIcon from "@/app/assets/images/svg/star.svg";
+import { motion, Variants } from "motion/react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { noAnimation } from "../helper/Helper";
 
 function MainHeroSection() {
   const [isDesktopScreen, setIsDesktopScreen] = useState<boolean>(false);
@@ -153,9 +154,65 @@ function MainHeroSection() {
         />
       </motion.div>
     );
-  }
-  else{
-    
+  } else {
+    return (
+      <div className="w-full h-full pt-10 relative overflow-hidden">
+        <div className="w-full h-full pyramid-design-container relative z-20">
+          <div className="w-full flex flex-col items-stretch justify-start">
+            <div className="w-full">
+              <div className="w-full h-full flex flex-col justify-end items-start gap-5">
+                <div className="w-full">
+                  <h1 className="font-kaisei-decol text-3xl leading-12 font-medium text-(--color-text)">
+                    &quot;We shape our buildings,
+                    <span className="text-(--color-gold-dark)">thereafter they shape us.&quot;</span>
+                  </h1>
+                </div>
+                <div className="w-full relative">
+                  <p className="font-quicksand font-semibold text-sm text-(--color-gold-dark)">
+                    Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in
+                    2007.
+                  </p>
+                </div>
+                <div className="w-full relative pt-4">
+                  <Image
+                    src={HeroMobileImage}
+                    alt="Hero Section Image"
+                    aria-label="Hero Section Image"
+                    width={693}
+                    height={493}
+                    loading="lazy"
+                    className="rounded-lg overflow-hidden"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="w-full grow">
+              <div className="w-full h-full">
+                <div className="w-full h-full flex flex-wrap items-center justify-center gap-y-5 gap-x-4 pt-10">
+                  {["Architect Design", "Interior Design", "3D Modeling"].map((item, i) => (
+                    <h2
+                      key={i}
+                      className="flex items-center gap-1 py-0 font-kaisei-decol text-(--color-text) capitalize">
+                      <span className="text-lg">{String(i + 1).padStart(2, "0")}.</span>
+                      <span className="text-sm">{item}</span>
+                    </h2>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Image
+          src={HeroVectorOne}
+          alt="Hero Section Vector"
+          title="Hero Section Vector"
+          loading="lazy"
+          className="absolute top-0 -left-1/4"
+          width={835}
+          height={835}
+        />
+      </div>
+    );
   }
 }
 
