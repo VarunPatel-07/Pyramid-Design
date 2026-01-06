@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { OurProjectInfoArray } from "../constant/Project";
-import Image from "next/image";
-import { classNames, IsOdd, noAnimation } from "../helper/Helper";
-import Link from "next/link";
-import { IoArrowForward } from "react-icons/io5";
 import { motion, Variants } from "motion/react";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { IoArrowForward } from "react-icons/io5";
+import { OurProjectInfoArray } from "../constant/Project";
+import { classNames, IsOdd, noAnimation } from "../helper/Helper";
 
 function OurProjects({ FilterLimit, showTitle = true }: { FilterLimit?: number; showTitle?: boolean }) {
   const [page, setPage] = useState<number>(1);
@@ -52,15 +52,15 @@ function OurProjects({ FilterLimit, showTitle = true }: { FilterLimit?: number; 
       <div className="pyramid-design-parent-container relative overflow-hidden">
         <div className="pyramid-design-container h-full relative z-10">
           {showTitle && (
-            <div className="w-full pb-16">
-              <h2 className="font-kaisei-decol text-5xl leading-16 font-semibold text-(--color-text) gap-4 capitalize text-center">
+            <div className="w-full pb-8 xl:pb-16">
+              <h2 className="font-kaisei-decol text-2xl xl:text-5xl leading-10 xl:leading-16 font-semibold text-(--color-text) gap-4 capitalize text-center">
                 Our Projects
               </h2>
             </div>
           )}
 
           <div className="w-full">
-            <div className="flex flex-col md:flex-wrap md:flex-row md:gap-4 md:justify-between items-start justify-start gap-12 lg:gap-7">
+            <div className="flex flex-col md:flex-wrap md:flex-row md:gap-4 md:justify-between items-start justify-start gap-7 lg:gap-12">
               {filteredProjects?.map((item, index) => (
                 <motion.div
                   key={item?.id}
@@ -79,10 +79,14 @@ function OurProjects({ FilterLimit, showTitle = true }: { FilterLimit?: number; 
                       }
                     )}>
                     <div className="w-full lg:w-[40%] bg-(--theme-dark-color) rounded-xl lg:rounded-2xl xl:rounded-3xl overflow-hidden">
-                      <div className="w-full h-full p-0 py-5 lg:p-10 flex flex-col items-start justify-between gap-5">
-                        <div className="flex flex-col items-start justify-start gap-5">
-                          <h3 className="font-kaisei-decol text-(--color-bg) text-3xl">{item?.title}</h3>
-                          <p className="font-quicksand text-(--color-gray-light)">{item?.description}</p>
+                      <div className="w-full h-full p-0 py-2.5 md:py-5 lg:p-10 flex flex-col items-start justify-between gap-2.5 md:gap-5">
+                        <div className="flex flex-col items-start justify-start gap-2.5 md:gap-5">
+                          <h3 className="font-kaisei-decol text-(--color-bg) text-lg md:text-xl lg:text-2xl xl:text-3xl">
+                            {item?.title}
+                          </h3>
+                          <p className="font-quicksand text-(--color-gray-light) text-sm md:text-base">
+                            {item?.description}
+                          </p>
                         </div>
                         <Link
                           href={item?.link}
@@ -106,7 +110,7 @@ function OurProjects({ FilterLimit, showTitle = true }: { FilterLimit?: number; 
                         aria-label="About Us"
                         width={771}
                         height={347.73}
-                        className="w-full object-cover transition-all duration-500  hover:scale-105 h-full"
+                        className="w-full object-cover transition-all aspect-video lg:aspect-auto duration-500  hover:scale-105 h-full"
                       />
                     </div>
                   </div>
@@ -121,7 +125,7 @@ function OurProjects({ FilterLimit, showTitle = true }: { FilterLimit?: number; 
                   aria-label="See All Projects"
                   onClick={() => setPage((perv) => perv + 1)}
                   className={classNames(
-                    "font-quicksand text-lg text-(--color-text) items-center justify-center pt-2.5 pb-3 px-6 rounded-lg capitalize bg-transparent border border-(--color-text)  group transition-all font-semibold hover:bg-(--theme-dark-color) hover:text-(--color-bg) cursor-pointer",
+                    "font-quicksand text-sm md:text-base lg:text-lg text-(--color-text) items-center justify-center pt-2.5 pb-3 px-6 rounded-lg capitalize bg-transparent border border-(--color-text)  group transition-all font-semibold hover:bg-(--theme-dark-color) hover:text-(--color-bg) cursor-pointer",
                     {}
                   )}>
                   <span className="flex items-center justify-start gap-3">

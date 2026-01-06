@@ -1,15 +1,15 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
-import Link from "next/link";
-import EmbedMap from "./EmbedMap";
-import Input from "./common/Input";
 import countryData from "@/app/data/country-info.json";
+import Link from "next/link";
 import { useContext, useEffect, useRef, useState } from "react";
 import { countryObject, PyramidDesignContactFormDataInterface } from "../Interface/Interface";
+import { NotificationContext, NotificationContextApiProps } from "../context/notification/NotificationContextApi";
 import { formateAndVerifyPhoneNumber, isValidEmail, verifyPhoneNumberLength } from "../helper/Helper";
+import EmbedMap from "./EmbedMap";
+import Input from "./common/Input";
 import SearchDrop from "./common/SearchDrop";
 import TextArea from "./common/TextArea";
-import { NotificationContext, NotificationContextApiProps } from "../context/notification/NotificationContextApi";
 
 const BASE_URL = process.env.NEXT_PUBLIC_ORBIT_CONTACT_FORM_BASE_URL;
 const ORBIT_API_KEY = process.env.NEXT_PUBLIC_ORBIT_API_KEY;
@@ -157,35 +157,35 @@ function PyramidDesignContactForm() {
   return (
     <div className="w-full h-full pb-10 xl:pb-20">
       <div className="pyramid-design-container">
-        <div className="w-full flex flex-col items-center justify-center gap-5 pb-25">
-          <h2 className="font-kaisei-decol text-5xl leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold">
+        <div className="w-full flex flex-col items-center justify-center gap-5 pb-12 md:pb-15 lg:mb-20 xl:pb-25">
+          <h2 className="font-kaisei-decol text-2xl xl:text-5xl leading-10 xl:leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold">
             <span className="block">Have A Project In Mind?</span>
           </h2>
-          <p className="font-quicksand max-w-180 text-lg">
+          <p className="font-quicksand max-w-180 text-sm md:text-base lg:text-lg">
             <strong>Let’s bring your ideas to life.</strong> Whether you have a clear vision or just the spark of an
             idea, we’re here to help. Fill out the form,
             <strong> reach us by phone or email, or visit us at our location</strong> let’s start a conversation and
             build something meaningful together.
           </p>
         </div>
-        <div className="flex  items-stretch justify-between gap-20">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-col items-stretch justify-between gap-10 lg:gap-20">
+          <div className="w-full md:w-1/2">
             <div className="w-full h-full flex flex-col items-stretch justify-between gap-10">
-              <div className="bg-(--theme-dark-color) rounded-xl p-10">
-                <div className="flex flex-col text-start justify-start gap-10">
+              <div className="bg-(--theme-dark-color) rounded-xl p-5 lg:p-10">
+                <div className="flex flex-col text-start justify-start gap-6 lg:gap-10">
                   <div className="flex flex-col items-start justify-start gap-1.5">
-                    <span className="font-quicksand text-(--color-bg) font-medium text-lg">Email Us:</span>
+                    <span className="font-quicksand text-(--color-bg) font-medium text-sm md:text-lg">Email Us:</span>
                     <Link
                       href="mailto:contact.pyramiddesign.com"
-                      className="text-(--color-bg) font-kaisei-decol font-bold text-2xl pl-1">
+                      className="text-(--color-bg) font-kaisei-decol font-bold text-base lg:text-2xl pl-1">
                       contact.pyramiddesign.com
                     </Link>
                   </div>
                   <div className="flex flex-col items-start justify-start gap-1.5">
-                    <span className="font-quicksand text-(--color-bg) font-medium text-lg">Call Us:</span>
+                    <span className="font-quicksand text-(--color-bg) font-medium text-sm md:text-lg">Call Us:</span>
                     <Link
                       href="tel:93769 15625"
-                      className="text-(--color-bg) font-kaisei-decol font-bold text-2xl pl-1">
+                      className="text-(--color-bg) font-kaisei-decol font-bold text-base lg:text-2xl pl-1">
                       +91-93769 15625
                     </Link>
                   </div>
@@ -196,8 +196,8 @@ function PyramidDesignContactForm() {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
-            <div className="bg-[#b7c3cd20] p-10 rounded-xl h-full">
+          <div className="w-full md:w-1/2">
+            <div className="bg-[#b7c3cd20] p-5 lg:p-10 rounded-xl h-full">
               <form className="flex flex-col items-start w-full justify-between gap-5 h-full" onSubmit={handelSubmit}>
                 <div className="w-full">
                   <Input
