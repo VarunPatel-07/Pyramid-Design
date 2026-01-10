@@ -5,6 +5,7 @@ const config = {
     extend: {
       screens: {
         xl: "1200px",
+        slg: "991px",
       },
     },
   },

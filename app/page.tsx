@@ -1,13 +1,17 @@
+import dynamic from "next/dynamic";
 import AboutUsSection from "./components/AboutUsSection";
 import BlurEllipseBlue from "./components/BlurEllipseBlue";
 import BookAnAppointment from "./components/BookAnAppointment";
-import ClientTestimonial from "./components/ClientTestimonial";
 import MainHeroSection from "./components/MainHeroSection";
 import MarqueeSlider from "./components/MarqueSlider";
 import OurImpactInNumber from "./components/OurImpactInNumber";
 import OurProjects from "./components/OurProjects";
 import OurTeamSection from "./components/OurTeamSection";
 import PyramidDesignContactForm from "./components/PyramidDesignContactForm";
+
+const ClientTestimonial = dynamic(() => import("./components/ClientTestimonial"), {
+  loading: () => <div className="h-75 animate-pulse bg-gray-800 rounded-xl" />,
+});
 
 function page() {
   return (

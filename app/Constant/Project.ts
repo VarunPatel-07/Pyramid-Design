@@ -1,247 +1,127 @@
-import { OurProjectInfoArrayInterface } from "../Interface/Interface";
 import ProjectImageOne from "@/app/assets/images/project/project-image-one.png";
-import ProjectImageTwo from "@/app/assets/images/project/project-image-two.png";
 import ProjectImageThree from "@/app/assets/images/project/project-image-three.png";
+import ProjectImageTwo from "@/app/assets/images/project/project-image-two.png";
+import { OurProjectInfoArrayInterface } from "../Interface/Interface";
 
 export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
   {
     id: 1,
-    title: "Landscape Project 1",
+    title: "Urban Courtyard Residence",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A contemporary residential project designed around a central courtyard, blending natural light, ventilation, and modern living within an urban context.",
     image: ProjectImageOne,
-    link: "/landscape",
+    link: "/project/urban-courtyard-residence",
   },
   {
     id: 2,
-    title: "Landscape Project 2",
+    title: "Hillside Villa Retreat",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A luxury hillside villa integrating natural terrain, panoramic views, and sustainable materials to create a seamless indoor–outdoor living experience.",
     image: ProjectImageTwo,
-    link: "/landscape",
+    link: "/project/hillside-villa-retreat",
   },
   {
     id: 3,
-    title: "Landscape Project 3",
+    title: "Commercial Office Complex",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A multi-story commercial office building designed for productivity, natural lighting, and energy efficiency in a fast-growing business district.",
     image: ProjectImageThree,
-    link: "/landscape",
+    link: "/project/commercial-office-complex",
   },
   {
     id: 4,
-    title: "Landscape Project 4",
+    title: "Minimalist Family Home",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A minimalist residential design focusing on clean geometry, functional spaces, and a neutral material palette for modern family living.",
     image: ProjectImageOne,
-    link: "/landscape",
+    link: "/project/minimalist-family-home",
   },
   {
     id: 5,
-    title: "Landscape Project 5",
+    title: "Eco-Friendly Housing Development",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A sustainable housing project utilizing passive design strategies, rainwater harvesting, and locally sourced materials.",
     image: ProjectImageTwo,
-    link: "/landscape",
+    link: "/project/eco-friendly-housing",
   },
   {
     id: 6,
-    title: "Landscape Project 6",
+    title: "Luxury Apartment Tower",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A high-rise residential tower combining luxury amenities, efficient layouts, and striking architectural form within the city skyline.",
     image: ProjectImageThree,
-    link: "/landscape",
+    link: "/project/luxury-apartment-tower",
   },
   {
     id: 7,
-    title: "Landscape Project 7",
+    title: "Boutique Hotel & Spa",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A boutique hospitality project designed to offer a serene guest experience through warm materials, landscape integration, and spatial harmony.",
     image: ProjectImageOne,
-    link: "/landscape",
+    link: "/project/boutique-hotel-spa",
   },
   {
     id: 8,
-    title: "Landscape Project 8",
+    title: "Cultural Community Center",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A public community center designed as a social hub, hosting cultural events, exhibitions, and shared community activities.",
     image: ProjectImageTwo,
-    link: "/landscape",
+    link: "/project/community-cultural-center",
   },
   {
     id: 9,
-    title: "Landscape Project 9",
+    title: "Urban Landscape Park",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A landscape architecture project transforming an unused urban site into a vibrant public park with walkways, green zones, and seating areas.",
     image: ProjectImageThree,
-    link: "/landscape",
+    link: "/project/urban-landscape-park",
   },
   {
     id: 10,
-    title: "Landscape Project 10",
+    title: "Modern Educational Campus",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "An educational campus designed to foster collaboration and learning through open courtyards, flexible classrooms, and natural surroundings.",
     image: ProjectImageOne,
-    link: "/landscape",
+    link: "/project/educational-campus",
   },
   {
     id: 11,
-    title: "Landscape Project 11",
+    title: "Waterfront Mixed-Use Development",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A mixed-use development integrating residential, retail, and leisure spaces along a waterfront with strong pedestrian connectivity.",
     image: ProjectImageTwo,
-    link: "/landscape",
+    link: "/project/waterfront-mixed-use",
   },
   {
     id: 12,
-    title: "Landscape Project 12",
+    title: "Corporate Headquarters Building",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A corporate headquarters reflecting brand identity through bold architectural expression, sustainable systems, and flexible office layouts.",
     image: ProjectImageThree,
-    link: "/landscape",
+    link: "/project/corporate-headquarters",
   },
   {
     id: 13,
-    title: "Landscape Project 13",
+    title: "Private Farmhouse Residence",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A farmhouse-inspired residence blending traditional architecture with modern comforts, set within expansive natural surroundings.",
     image: ProjectImageOne,
-    link: "/landscape",
+    link: "/project/private-farmhouse-residence",
   },
   {
     id: 14,
-    title: "Landscape Project 14",
+    title: "Retail & Lifestyle Center",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "An open-air retail and lifestyle center designed to enhance user experience through spatial flow, landscaping, and natural shading.",
     image: ProjectImageTwo,
-    link: "/landscape",
+    link: "/project/retail-lifestyle-center",
   },
   {
     id: 15,
-    title: "Landscape Project 15",
+    title: "Urban Redevelopment Project",
     description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
+      "A large-scale urban redevelopment initiative revitalizing existing infrastructure with modern design and sustainable planning.",
     image: ProjectImageThree,
-    link: "/landscape",
-  },
-  {
-    id: 16,
-    title: "Landscape Project 16",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageOne,
-    link: "/landscape",
-  },
-  {
-    id: 17,
-    title: "Landscape Project 17",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageTwo,
-    link: "/landscape",
-  },
-  {
-    id: 18,
-    title: "Landscape Project 18",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageThree,
-    link: "/landscape",
-  },
-  {
-    id: 19,
-    title: "Landscape Project 19",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageOne,
-    link: "/landscape",
-  },
-  {
-    id: 20,
-    title: "Landscape Project 20",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageTwo,
-    link: "/landscape",
-  },
-  {
-    id: 21,
-    title: "Landscape Project 21",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageThree,
-    link: "/landscape",
-  },
-  {
-    id: 22,
-    title: "Landscape Project 22",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageOne,
-    link: "/landscape",
-  },
-  {
-    id: 23,
-    title: "Landscape Project 23",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageTwo,
-    link: "/landscape",
-  },
-  {
-    id: 24,
-    title: "Landscape Project 24",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageThree,
-    link: "/landscape",
-  },
-  {
-    id: 25,
-    title: "Landscape Project 25",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageOne,
-    link: "/landscape",
-  },
-  {
-    id: 26,
-    title: "Landscape Project 26",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageTwo,
-    link: "/landscape",
-  },
-  {
-    id: 27,
-    title: "Landscape Project 27",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageThree,
-    link: "/landscape",
-  },
-  {
-    id: 28,
-    title: "Landscape Project 28",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageOne,
-    link: "/landscape",
-  },
-  {
-    id: 29,
-    title: "Landscape Project 29",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageTwo,
-    link: "/landscape",
-  },
-  {
-    id: 30,
-    title: "Landscape Project 30",
-    description:
-      "Founded in 2007, Sparch is specializing in providing innovative services such as website development and design.",
-    image: ProjectImageThree,
-    link: "/landscape",
+    link: "/project/urban-redevelopment",
   },
 ];

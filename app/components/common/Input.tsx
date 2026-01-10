@@ -1,9 +1,9 @@
+import { countryObject } from "@/app/Interface/Interface";
 import clsx from "clsx";
 import React, { SetStateAction } from "react";
 import { FaStarOfLife } from "react-icons/fa";
 import { twMerge } from "tailwind-merge";
 import DropDown from "./DropDown";
-import { countryObject } from "@/app/Interface/Interface";
 
 function Input({
   label,
@@ -61,9 +61,7 @@ function Input({
   return (
     <div className="w-full h-fit">
       {label && (
-        <label
-          htmlFor=""
-          className="pb-2.5 inline-block font-quicksand text-sm md:text-base font-semibold">
+        <label htmlFor="" className="pb-2.5 inline-block font-quicksand text-sm lg:text-base font-semibold">
           <span className="flex gap-1">
             <span>{label}</span>
             {isRequiredField && <FaStarOfLife className="w-1.5 text-red-700" />}
@@ -99,7 +97,7 @@ function Input({
             placeholder={placeHolder}
             className={twMerge(
               clsx(
-                "border border-gray-500  px-7 py-3 bg-white w-full  text-black focus:outline-none focus:ring-0 focus:border-[#191A23] font-quicksand text-sm md:text-lg border-none! placeholder:text-gray-500 disabled:bg-[#7fab98]/15 disabled:border disabled:border-[#7fab98] disabled:cursor-not-allowed",
+                "border border-gray-500 px-4 lg:px-7 py-2 pb-2.5 lg:py-3 bg-white w-full  text-black focus:outline-none focus:ring-0 focus:border-[#191A23] font-quicksand text-sm lg:text-lg border-none! placeholder:text-gray-500 disabled:bg-[#7fab98]/15 disabled:border disabled:border-[#7fab98] disabled:cursor-not-allowed",
                 className
               )
             )}

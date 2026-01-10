@@ -4,24 +4,26 @@ import TestimonialVector from "@/app/assets/images/svg/testimonial-vector.svg";
 import Image from "next/image";
 import { useRef } from "react";
 import { HiOutlineArrowLeft, HiOutlineArrowRight } from "react-icons/hi";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+
 function ClientTestimonial() {
   const prevRef = useRef<HTMLButtonElement>(null);
   const nextRef = useRef<HTMLButtonElement>(null);
   return (
-    <div className="w-full h-full pb-10 xl:pb-40 relative pyramid-design-parent-container">
+    <div className="w-full h-full pb-15 md:pb-20 xl:pb-40 relative pyramid-design-parent-container">
       <div className="pyramid-design-container relative z-20">
         <div className="w-full flex items-center justify-center">
-          <h2 className="font-kaisei-decol text-2xl xl:text-5xl leading-10 xl:leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold">
+          <h2 className="font-kaisei-decol text-2xl md:text-3xl xl:text-5xl leading-10 xl:leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold">
             Testimonials
           </h2>
         </div>
-        <div className="w-full pt-8 lg:pt-12 xl:pt-20">
-          <div className="bg-(--theme-dark-color) rounded-xl lg:rounded-2xl xl:rounded-3xl px-5 lg:px-10 py-10 relative">
+        <div className="w-full pt-8 md:pt-10 lg:pt-12 xl:pt-20">
+          <div className="bg-(--theme-dark-color) rounded-lg md:rounded-xl lg:rounded-2xl xl:rounded-3xl px-5 lg:px-10 py-10 relative">
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
@@ -49,7 +51,7 @@ function ClientTestimonial() {
               {Array.from({ length: 10 })?.map((_, key) => (
                 <SwiperSlide key={key}>
                   <div className="w-ful lg:max-w-[90%]">
-                    <span className="text-(--color-gray-light) font-kaisei-decol text-base md:text-lg lg:text-xl xl:text-[32px] leading-8 xl:leading-12 font-bold">
+                    <span className="text-(--color-gray-light) font-kaisei-decol text-base md:text-lg lg:text-xl xl:text-2xl leading-8 xl:leading-12 font-normal">
                       “I really enjoyed working with you guys, you guys are very communicative and quick to do the job.
                       I really can’t wait to work with you again”
                     </span>
@@ -98,7 +100,7 @@ function ClientTestimonial() {
         alt="Testimonial Vector"
         title="Testimonial Vector"
         loading="lazy"
-        className="absolute -top-1/6 -left-1/12 pointer-events-none hidden lg:block"
+        className="absolute -top-1/4 -left-1/12 pointer-events-none hidden lg:block"
         width={850}
         height={850}
       />

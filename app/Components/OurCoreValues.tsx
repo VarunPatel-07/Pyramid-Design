@@ -40,21 +40,21 @@ const OurCoreValuesArray: OurCoreValuesArrayInterface[] = [
 ];
 function OurCoreValues() {
   return (
-    <div className="w-full py-10 xl:py-37.5">
+    <div className="w-full pb-10 md:pb-18.75 xl:pb-37.5">
       <div className="pyramid-design-container">
         <div className="w-full pb-16">
-          <h2 className="font-kaisei-decol text-5xl leading-16 font-semibold text-(--color-text) gap-4 capitalize text-center">
+          <h2 className="font-kaisei-decol text-2xl md:text-3xl xl:text-5xl leading-9 xl:leading-16 font-semibold text-(--color-text) gap-4 capitalize text-center">
             Our Core Values
           </h2>
         </div>
-        <div className="w-full grid grid-cols-3 gap-10">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 lg:gap-10">
           {OurCoreValuesArray?.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center bg-white shadow-[0_0_15px_1px_#00000010] hover:shadow-[0_0_15px_1px_#ffd54f5b] p-14 rounded-3xl transition-all hover:-translate-y-2.5 cursor-pointer hover:bg-[#fffdfd]">
-              <div className="bg-(--color-gold-light) p-4 text-2xl w-fit rounded-lg mb-8">{item?.icon}</div>
-              <span className="font-kaisei-decol text-2xl font-bold text-(--theme-dark-color)">{item?.title}</span>
-              <p className="font-quicksand text-base font-medium text-(--color-text-secondary) w-full text-center pt-4">
+              className="flex flex-col items-center justify-center bg-white shadow-[0_0_15px_1px_#00000010] hover:shadow-[0_0_15px_1px_#ffd54f5b] p-8 xl:p-14 rounded-lg md:rounded-xl lg:rounded-2xl xl:rounded-3xl transition-all hover:-translate-y-2.5 cursor-pointer hover:bg-[#fffdfd] border border-black/5">
+              <div className="bg-(--color-gold-light) p-4 text-2xl w-fit rounded-lg mb-4 lg:mb-8">{item?.icon}</div>
+              <span className="font-kaisei-decol text-xl lg:text-2xl font-bold text-(--theme-dark-color)">{item?.title}</span>
+              <p className="font-quicksand text-sm lg:text-base font-medium text-(--color-text-secondary) w-full text-center pt-4">
                 {item?.description}
               </p>
             </div>

@@ -1,8 +1,5 @@
-import Link from "next/link";
-
 import { Metadata } from "next";
-import LottieAnimation from "./components/LottieAnimation";
-import { IoArrowForward } from "react-icons/io5";
+import NotFoundCompetent from "./components/NotFoundCompetent";
 
 export const metadata: Metadata = {
   title: "Page Not Found | Think Arq - Think Build Disrupt",
@@ -24,23 +21,7 @@ export const metadata: Metadata = {
 function NotFound() {
   return (
     <div className="w-full h-screen">
-      <main className="flex flex-col items-center justify-center h-full py-25 bg-gray-50 text-center">
-        <div className="max-w-100 max-h-100">
-          <LottieAnimation path="/lottie/404-animation.lottie" width={300} height={300} />
-        </div>
-        <p className="text-lg font-space-grotesk text-gray-600 mt-4 mb-8">The page you’re looking for doesn’t exist.</p>
-
-        <Link
-          href="/"
-          title="Home"
-          aria-label="Home"
-          className="font-quicksand text-lg text-(--color-text) flex items-center justify-center pt-2.5 pb-3 px-6 rounded-lg capitalize bg-(--color-gold-light) hover:bg-(--color-gold-hover) group transition-all font-semibold">
-          <span className="flex items-center justify-start gap-3">
-            <span>Go back home</span>
-            <IoArrowForward className="text-2xl -rotate-45 group-hover:rotate-0 transition-all" />
-          </span>
-        </Link>
-      </main>
+      <NotFoundCompetent />
     </div>
   );
 }
