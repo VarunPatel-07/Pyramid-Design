@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "./Components/Navbar/Navbar";
+import "./css/globals.css";
+import Navbar from "./components/navbar/Navbar";
+import { NotificationContextApiProvider } from "./context/notification/NotificationContextApi";
+import Notification from "./components/common/Notification/Notification";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Pyramid Design | Architecture & Interior Design Studio",
@@ -28,9 +31,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`antialiased bg-(--color-bg)`}>
-        <Navbar />
-        {children}
+      <body className={`antialiased bg-(--color-bg) overflow-x-hidden`}>
+        <NotificationContextApiProvider>
+          <Navbar />
+          {children}
+          <Footer />
+
+          <Notification />
+        </NotificationContextApiProvider>
       </body>
     </html>
   );

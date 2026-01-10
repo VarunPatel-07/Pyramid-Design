@@ -3,6 +3,10 @@
   padding: 0 16px !important;
   /* background-color: red; */
 }
+.pyramid-design-parent-container {
+  max-width: 1920px !important;
+  margin: 0 auto !important;
+}
 @media only screen and (min-width: 1199px) {
   .pyramid-design-container {
     width: calc(100% - 120px) !important;
