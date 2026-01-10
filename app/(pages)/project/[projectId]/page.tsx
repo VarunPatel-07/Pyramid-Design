@@ -1,3 +1,4 @@
+import MasonryGrid from "@/app/components/MasonryGrid";
 import NotFoundCompetent from "@/app/components/NotFoundCompetent";
 import PyramidDesignContactForm from "@/app/components/PyramidDesignContactForm";
 import { OurProjectInfoArray } from "@/app/constant/Project";
@@ -6,10 +7,7 @@ import Image from "next/image";
 export default async function Page({ params }: { params: Promise<{ projectId: string }> }) {
   const { projectId: projectIdSlug } = await params;
   const project = OurProjectInfoArray?.find((item) => item?.link === `/project/${projectIdSlug}`);
-  const items = Array.from({ length: 24 }, (_, i) => ({
-    id: i + 1,
-    height: Math.floor(Math.random() * 200) + 150,
-  }));
+
   if (!project) {
     return (
       <div className="w-full h-screen">
@@ -46,13 +44,7 @@ export default async function Page({ params }: { params: Promise<{ projectId: st
         </section>
         <section className="w-full h-full bg-(--color-bg) py-15 md:py-20 xl:py-40">
           <div className="pyramid-design-container">
-            <div className="sm:columns-2 gap-4 lg:px-4">
-              {items.map((item) => (
-                <div key={item.id} className="mb-4 break-inside-avoid" style={{ height: `${item.height}px` }}>
-                  <div className="w-full h-full bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300" />
-                </div>
-              ))}
-            </div>
+            <MasonryGrid />
           </div>
         </section>
         <section className="w-full bg-(--color-bg)">
