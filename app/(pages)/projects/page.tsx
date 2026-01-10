@@ -17,7 +17,7 @@ function page() {
         <OurProjects showTitle={false} />
       </section>
 
-      <section className="w-full h-full bg-(--color-bg)">
+      <section className="w-full h-full bg-(--color-bg)">               
         <ClientTestimonial />
       </section>
       <section className="w-full bg-(--color-bg)">

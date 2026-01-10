@@ -13,7 +13,7 @@ function MarqueeSlider() {
   ];
 
   return (
-    <div className="w-full overflow-hidden my-5 md:my-10 xl:my-20">
+    <div className="w-full overflow-hidden my-5 md:my-7 lg:my-10 xl:my-20">
       <div className="min-h-37.5 flex items-center justify-center">
         <div className="w-full bg-(--theme-dark-color)">
           <div className="flex animate-marquee whitespace-nowrap">

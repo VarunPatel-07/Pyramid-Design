@@ -9,25 +9,25 @@ import { SocialMediaLinksArrayInterface } from "../Interface/Interface";
 const SocialMediaLinksArray: SocialMediaLinksArrayInterface[] = [
   {
     link: "https://www.facebook.com/",
-    icon: <FaFacebook />,
+    icon: <FaFacebook className="text-base md:text-xl lg:text-2xl" />,
     target: "_blank",
     name: "FaceBook",
   },
   {
     link: "https://www.instagram.com/",
-    icon: <FaInstagram />,
+    icon: <FaInstagram className="text-base md:text-xl lg:text-2xl" />,
     target: "_blank",
     name: "Instagram",
   },
   {
     link: "https://www.linkedin.com/",
-    icon: <FaLinkedin />,
+    icon: <FaLinkedin className="text-base md:text-xl lg:text-2xl" />,
     target: "_blank",
     name: "Linked In",
   },
   {
     link: "https://twitter.com/",
-    icon: <FaTwitter />,
+    icon: <FaTwitter className="text-base md:text-xl lg:text-2xl" />,
     target: "_blank",
     name: "Twitter",
   },
@@ -36,23 +36,30 @@ function Footer() {
   return (
     <footer className="w-full pt-5 xl:pt-17.5">
       <div className="pyramid-design-container">
-        <div className="w-full flex flex-wrap flex-row md:grid md:grid-cols-3 pb-10">
-          <div className="w-full flex flex-col items-start justify-start gap-4 md:gap-8">
+        <div className="w-full flex flex-wrap flex-row lg:grid lg:grid-cols-3 pb-6 md:pb-4 lg:pb-10">
+          <div className="w-full md:w-1/2 lg:w-full grow flex flex-col items-start justify-start gap-4 lg:gap-8 px-2.5">
             <Link href={"/"} title="ThinkArq Logo" aria-label="ThinkArq Logo" className="w-fit h-fit -ml-1">
-              <Image src={PyramidDesignLogo} alt="ThinkArq Logo" title="ThinkArq Logo" width={140} height={45} className="max-w-25" />
+              <Image
+                src={PyramidDesignLogo}
+                alt="ThinkArq Logo"
+                title="ThinkArq Logo"
+                width={140}
+                height={45}
+                className="max-w-25 lg:max-w-35 -ml-2.5 lg:-ml-4"
+              />
             </Link>
-            <p>
+            <p className="text-sm md:max-w-[90%] lg:text-base">
               Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in 2007.
             </p>
-            <div className="flex items-center justify-start gap-5 md:gap-10 pb-12 pt-6 md:pt-4">
+            <div className="flex items-center justify-start gap-5 md:gap-7 pb-6 pt-4 md:pt-3 lg:pt-4">
               {SocialMediaLinksArray?.map((item, index) => (
-                <Link href={item?.link} className="w-fit h-fit -ml-1 text-2xl" key={index}>
+                <Link href={item?.link} className="w-fit h-fit text-2xl" key={index}>
                   {item?.icon}
                 </Link>
               ))}
             </div>
           </div>
-          <div className="w-1/2 md:w-full flex flex-col items-start justify-start gap-2 md:gap-5 xl:px-30 xl:pl-40">
+          <div className="w-1/2 md:w-1/4 lg:w-full flex flex-col items-start justify-start gap-2 md:gap-5 xl:px-30 xl:pl-40">
             {NavbarNavLinksArray.map((link) => {
               return (
                 <Link
@@ -80,7 +87,7 @@ function Footer() {
               Contact Us
             </Link>
           </div>
-          <div className="w-1/2 md:w-full flex flex-col items-start justify-start gap-2 md:gap-5 xl:px-30">
+          <div className="w-1/2 md:w-1/4 lg:w-full flex flex-col items-start justify-start gap-2 md:gap-5 xl:px-30">
             <Link
               href="/faq"
               title="faq"

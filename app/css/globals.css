@@ -11,7 +11,7 @@
   --color-text: #2c2c2c;
   --color-gray-light: #e5e5e5;
   --blur-blue-ellipse: #5172e820;
-  --color-text-secondary: #2c2c2cba;
+  --color-text-secondary: #2c2c2ca0;
   --theme-dark-color: #1e1219;
   --section-title-bg: #f5f5f5;
 }
@@ -22,12 +22,16 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+@theme {
+  --breakpoint-sm: 525px;
+  --breakpoint-slg: 991px;
+}
 html {
   scroll-behavior: smooth;
   background-color: var(--color-bg) !important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .navbar-custom-css {
     position: fixed;
     top: 0;
@@ -281,4 +285,13 @@ html {
     transform: translateY(-150%) scaleX(0);
     opacity: 0;
   }
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.hide-scrollbar {
+  scrollbar-width: none; /* Hides the scrollbar */
+  -ms-overflow-style: none; /* For Internet Explorer 10+ */
 }

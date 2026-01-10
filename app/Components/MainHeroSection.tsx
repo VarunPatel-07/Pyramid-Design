@@ -68,17 +68,18 @@ function MainHeroSection() {
   if (!isMobileScreen) {
     return (
       <motion.div
+        layout="position"
         className="w-full h-full pt-10 xl:pt-22.5 relative overflow-hidden hidden lg:block"
         variants={isDesktopScreen ? container : noAnimation}
         initial={isDesktopScreen ? "hidden" : undefined}
         animate={isDesktopScreen ? "show" : undefined}>
         <div className="w-full h-full pyramid-design-container relative z-20">
           <div className="w-full flex items-stretch justify-start">
-            <motion.div className="w-[70%]" variants={isDesktopScreen ? fadeRight : noAnimation}>
-              <div className="w-full h-full flex flex-col justify-end items-start gap-20 xl:gap-[100px]">
-                <motion.div className="w-full" variants={isDesktopScreen ? fadeUp : noAnimation}>
-                  <div className="w-full max-w-[350px] relative">
-                    <p className="font-quicksand font-semibold text-lg text-(--color-gold-dark)">
+            <motion.div layout="position" className="w-[70%]" variants={isDesktopScreen ? fadeRight : noAnimation}>
+              <div className="w-full h-full flex flex-col justify-end items-start gap-20 xl:gap-25">
+                <motion.div layout="position" className="w-full" variants={isDesktopScreen ? fadeUp : noAnimation}>
+                  <div className="w-full max-w-87.5 relative">
+                    <p className="font-quicksand font-medium text-lg text-(--color-gold-dark)">
                       Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in
                       2007.
                     </p>
@@ -93,7 +94,10 @@ function MainHeroSection() {
                     />
                   </div>
                 </motion.div>
-                <motion.div className="w-full relative" variants={isDesktopScreen ? fadeUp : noAnimation}>
+                <motion.div
+                  layout="position"
+                  className="w-full relative"
+                  variants={isDesktopScreen ? fadeUp : noAnimation}>
                   <Image
                     src={HeroSectionImage}
                     alt="Hero Section Image"
@@ -104,9 +108,10 @@ function MainHeroSection() {
                   />
 
                   <motion.div
-                    className="absolute -top-[40%] -right-[35%] max-w-[800px]"
+                    layout="position"
+                    className="absolute -top-[40%] -right-[35%] max-w-200"
                     variants={isDesktopScreen ? fadeLeft : noAnimation}>
-                    <h1 className="font-kaisei-decol text-7xl leading-24 font-medium text-(--color-text)">
+                    <h1 className="font-kaisei-decol text-[68px] leading-24 font-medium text-(--color-text)">
                       &quot;We shape our buildings,
                       <span className="text-(--color-gold-dark)">
                         thereafter <br />
@@ -122,6 +127,7 @@ function MainHeroSection() {
                 <div className="w-full h-full flex flex-col items-start justify-end">
                   {["Architect Design", "Interior Design", "3D Modeling"].map((item, i) => (
                     <motion.h2
+                      layout="position"
                       key={i}
                       className="w-full flex items-center gap-10 py-7 font-kaisei-decol text-(--color-text) capitalize"
                       variants={isDesktopScreen ? fadeUp : noAnimation}>
@@ -158,22 +164,22 @@ function MainHeroSection() {
     return (
       <div className="w-full h-full pt-10 relative overflow-hidden">
         <div className="w-full h-full pyramid-design-container relative z-20">
-          <div className="w-full flex flex-col items-stretch justify-start">
+          <div className="w-full flex flex-col md:flex-row md:gap-10 items-stretch justify-start">
             <div className="w-full">
               <div className="w-full h-full flex flex-col justify-end items-start gap-5">
-                <div className="w-full">
-                  <h1 className="font-kaisei-decol text-3xl leading-12 font-medium text-(--color-text)">
+                <div className="w-full block md:hidden">
+                  <h1 className="font-kaisei-decol text-3xl leading-12 font-semibold text-(--color-text)">
                     &quot;We shape our buildings,
-                    <span className="text-(--color-gold-dark)">thereafter they shape us.&quot;</span>
+                    <span className="text-(--color-gold-dark) w-full">thereafter they shape us.&quot;</span>
                   </h1>
                 </div>
                 <div className="w-full relative">
-                  <p className="font-quicksand font-semibold text-sm text-(--color-gold-dark)">
+                  <p className="font-quicksand font-medium text-sm text-(--color-gold-dark)">
                     Founded in 2007, Sparch is specializing in providing innovative services such as websitFounded in
                     2007.
                   </p>
                 </div>
-                <div className="w-full relative pt-4">
+                <div className="w-full relative pt-4 md:grow md:pt-0 md:flex md:items-center md:justify-center">
                   <Image
                     src={HeroMobileImage}
                     alt="Hero Section Image"
@@ -188,13 +194,19 @@ function MainHeroSection() {
             </div>
             <div className="w-full grow">
               <div className="w-full h-full">
-                <div className="w-full h-full flex flex-wrap items-center justify-center gap-y-5 gap-x-4 pt-10">
+                <div className="w-full hidden md:block">
+                  <h1 className="font-kaisei-decol text-3xl leading-12 font-semibold text-(--color-text)">
+                    &quot;We shape our buildings,
+                    <span className="text-(--color-gold-dark) w-full">thereafter they shape us.&quot;</span>
+                  </h1>
+                </div>
+                <div className="w-full h-full flex flex-wrap md:flex-col items-center justify-center md:justify-start md:items-start gap-y-5 gap-x-4 sm:gap-x-10 md:gap-10 pt-10 md:pt-7">
                   {["Architect Design", "Interior Design", "3D Modeling"].map((item, i) => (
                     <h2
                       key={i}
                       className="flex items-center gap-1 py-0 font-kaisei-decol text-(--color-text) capitalize">
-                      <span className="text-lg">{String(i + 1).padStart(2, "0")}.</span>
-                      <span className="text-sm">{item}</span>
+                      <span className="text-lg sm:text-2xl md:text-2xl">{String(i + 1).padStart(2, "0")}.</span>
+                      <span className="text-sm sm:text-lg md:text-lg">{item}</span>
                     </h2>
                   ))}
                 </div>
@@ -207,7 +219,7 @@ function MainHeroSection() {
           alt="Hero Section Vector"
           title="Hero Section Vector"
           loading="lazy"
-          className="absolute top-0 -left-1/4"
+          className="absolute top-0 -left-1/4  md:-left-1/2 md:-top-1/2"
           width={835}
           height={835}
         />

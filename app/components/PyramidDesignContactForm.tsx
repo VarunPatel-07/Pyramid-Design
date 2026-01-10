@@ -16,7 +16,7 @@ const ORBIT_API_KEY = process.env.NEXT_PUBLIC_ORBIT_API_KEY;
 const ORBIT_API_SECRETE = process.env.NEXT_PUBLIC_ORBIT_API_SECRETE;
 const ORBIT_SAY_HI_FORM_ID = process.env.NEXT_PUBLIC_ORBIT_SAY_HI_FORM_ID;
 
-function PyramidDesignContactForm() {
+function PyramidDesignContactForm({ showTitle = true }: { showTitle?: boolean }) {
   const { handelNotification } = useContext(NotificationContext) as NotificationContextApiProps;
 
   const CountryDataRef = useRef(false);
@@ -155,49 +155,55 @@ function PyramidDesignContactForm() {
     loadCountryData();
   }, [countryOptionsDataArray]);
   return (
-    <div className="w-full h-full pb-10 xl:pb-20">
+    <div className="w-full h-full pb-15 md:pb-20 xl:pb-40">
       <div className="pyramid-design-container">
-        <div className="w-full flex flex-col items-center justify-center gap-5 pb-12 md:pb-15 lg:mb-20 xl:pb-25">
-          <h2 className="font-kaisei-decol text-2xl xl:text-5xl leading-10 xl:leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold">
-            <span className="block">Have A Project In Mind?</span>
-          </h2>
-          <p className="font-quicksand max-w-180 text-sm md:text-base lg:text-lg">
-            <strong>Let’s bring your ideas to life.</strong> Whether you have a clear vision or just the spark of an
-            idea, we’re here to help. Fill out the form,
-            <strong> reach us by phone or email, or visit us at our location</strong> let’s start a conversation and
-            build something meaningful together.
-          </p>
-        </div>
-        <div className="flex flex-col md:flex-col items-stretch justify-between gap-10 lg:gap-20">
-          <div className="w-full md:w-1/2">
-            <div className="w-full h-full flex flex-col items-stretch justify-between gap-10">
-              <div className="bg-(--theme-dark-color) rounded-xl p-5 lg:p-10">
-                <div className="flex flex-col text-start justify-start gap-6 lg:gap-10">
+        {showTitle && (
+          <div className="w-full flex flex-col items-center justify-center gap-5 pb-10 md:pb-15 xl:pb-25">
+            <h2 className="font-kaisei-decol text-2xl md:text-3xl xl:text-5xl leading-10 xl:leading-16 text-(--color-text) flex items-stretch justify-start gap-4 capitalize font-semibold text-center">
+              <span className="block">Have A Project In Mind?</span>
+            </h2>
+            <p className="font-quicksand md:max-w-[90%] lg:max-w-180 text-sm md:text-base lg:text-lg text-(--color-text-secondary)">
+              <strong>Let’s bring your ideas to life.</strong> Whether you have a clear vision or just the spark of an
+              idea, we’re here to help. Fill out the form,
+              <strong> reach us by phone or email, or visit us at our location</strong> let’s start a conversation and
+              build something meaningful together.
+            </p>
+          </div>
+        )}
+        <div className="flex flex-col slg:flex-row items-stretch justify-between gap-6 xl:gap-20">
+          <div className="w-full slg:w-1/2">
+            <div className="w-full h-full flex flex-col md:flex-row slg:flex-col! items-stretch justify-between gap-5 slg:gap-7 xl:gap-10">
+              <div className="bg-(--theme-dark-color) rounded-lg md:rounded-xl lg:rounded-2xl xl:rounded-3xl p-5 slg:p-10 slg:h-[50%]">
+                <div className="w-full h-full flex flex-col text-start justify-start md:justify-center gap-6 lg:gap-10">
                   <div className="flex flex-col items-start justify-start gap-1.5">
-                    <span className="font-quicksand text-(--color-bg) font-medium text-sm md:text-lg">Email Us:</span>
+                    <span className="font-quicksand text-white/50 font-medium text-sm md:text-lg slg:text-xl!">
+                      Email Us:
+                    </span>
                     <Link
                       href="mailto:contact.pyramiddesign.com"
-                      className="text-(--color-bg) font-kaisei-decol font-bold text-base lg:text-2xl pl-1">
+                      className="text-(--color-bg) font-kaisei-decol font-bold text-base slg:text-2xl pl-1">
                       contact.pyramiddesign.com
                     </Link>
                   </div>
                   <div className="flex flex-col items-start justify-start gap-1.5">
-                    <span className="font-quicksand text-(--color-bg) font-medium text-sm md:text-lg">Call Us:</span>
+                    <span className="font-quicksand text-white/50 font-medium text-sm md:text-lg slg:text-xl!">
+                      Call Us:
+                    </span>
                     <Link
                       href="tel:93769 15625"
-                      className="text-(--color-bg) font-kaisei-decol font-bold text-base lg:text-2xl pl-1">
+                      className="text-(--color-bg) font-kaisei-decol font-bold text-base slg:text-2xl pl-1">
                       +91-93769 15625
                     </Link>
                   </div>
                 </div>
               </div>
-              <div className="w-full h-full">
+              <div className="w-full h-full grow">
                 <EmbedMap />
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2">
-            <div className="bg-[#b7c3cd20] p-5 lg:p-10 rounded-xl h-full">
+          <div className="w-full slg:w-1/2">
+            <div className="bg-[#b7c3cd20] p-5 md:p-10 lg:p-10 rounded-lg md:rounded-xl lg:rounded-2xl xl:rounded-3xl h-full">
               <form className="flex flex-col items-start w-full justify-between gap-5 h-full" onSubmit={handelSubmit}>
                 <div className="w-full">
                   <Input
@@ -291,7 +297,7 @@ function PyramidDesignContactForm() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-5 py-4font-quicksand text-lg text-(--color-text) items-center justify-center py-3 rounded-lg capitalize bg-(--color-gold-light) hover:bg-(--color-gold-hover) group transition-all hidden md:flex font-semibold cursor-pointer disabled:opacity-60"
+                  className="w-full px-5 py-4font-quicksand text-base lg:text-lg text-(--color-text) items-center justify-center py-3 rounded-lg capitalize bg-(--color-gold-light) hover:bg-(--color-gold-hover) group transition-all font-semibold cursor-pointer disabled:opacity-60 md:max-w-[60%] slg:max-w-full! mx-auto"
                   disabled={loading}>
                   {loading ? "Sending...." : "Send Message"}
                 </button>

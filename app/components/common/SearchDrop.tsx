@@ -141,7 +141,7 @@ export default function SearchDrop(props: SearchDropProps) {
   return (
     <div className="w-full" ref={boxRef}>
       {label?.trim() != "" && (
-        <label htmlFor="" className="pb-2.5 inline-block font-quicksand text-sm md:text-base font-semibold">
+        <label htmlFor="" className="pb-2.5 inline-block font-quicksand text-sm lg:text-base font-semibold">
           <span className="flex gap-1">
             <span>{label}</span>
             {isRequiredField && <FaStarOfLife className="w-1.5 text-red-700" />}
@@ -156,7 +156,7 @@ export default function SearchDrop(props: SearchDropProps) {
           onKeyDown={handelKeyPress}
           ref={buttonRef}
           className={clsx(
-            "border border-black/30 rounded-xl px-7 py-3 bg-white w-full placeholder:text-[#898989] text-black focus:outline-none focus:ring-1 focus:ring-offset-0 focus:ring-[#191A23] font-space-grotesk text-lg flex items-center justify-between disabled:bg-[#7fab98]/15 disabled:border disabled:border-[#7fab98] disabled:cursor-not-allowed",
+            "border border-black/30 rounded-lg lg:rounded-xl px-4 lg:px-7 py-3 bg-white w-full placeholder:text-[#898989] text-black focus:outline-none focus:ring-1 focus:ring-offset-0 focus:ring-[#191A23] font-space-grotesk text-sm lg:text-lg flex items-center justify-between disabled:bg-[#7fab98]/15 disabled:border disabled:border-[#7fab98] disabled:cursor-not-allowed",
             className
           )}
           style={{ border: showError && errorMessage ? "1px solid red" : "" }}
@@ -216,7 +216,7 @@ export default function SearchDrop(props: SearchDropProps) {
                 <input
                   ref={inputFieldRef}
                   type="text"
-                  className="border border-gray-500 rounded-xl px-7 py-3 bg-white w-full placeholder:text-[#898989] text-black focus:outline-none focus:ring-0 focus:ring-offset-0 font-space-grotesk text-lg"
+                  className="border border-gray-500 rounded-lg lg:rounded-xl px-4 lg:px-7 py-3 bg-white w-full placeholder:text-[#898989] text-black focus:outline-none focus:ring-0 focus:ring-offset-0 font-space-grotesk text-sm lg:text-lg"
                   placeholder="Search..."
                   value={searchTerm}
                   onChange={handleSearch}
@@ -247,7 +247,7 @@ export default function SearchDrop(props: SearchDropProps) {
                             style={style}
                             key={index}
                             className={classNames(
-                              "px-3 py-2 cursor-pointer w-full text-black text-nowrap text-ellipsis overflow-hidden font-space-grotesk text-lg",
+                              "px-3 py-2 cursor-pointer w-full flex items-center justify-start text-black text-nowrap text-ellipsis overflow-hidden font-space-grotesk text-sm lg:text-lg",
                               {
                                 "bg-green-700 text-white hover:bg-green-700! cursor-not-allowed! opacity-70":
                                   isSelected,

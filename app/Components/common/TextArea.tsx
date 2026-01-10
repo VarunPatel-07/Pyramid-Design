@@ -36,7 +36,7 @@ function TextArea({
       {label?.trim() != "" && (
         <label
           htmlFor=""
-          className="pb-2.5 inline-block font-quicksand text-sm md:text-base font-semibold">
+          className="pb-2.5 inline-block font-quicksand text-sm lg:text-base font-semibold">
           <span className="flex gap-1">
             <span>{label}</span>
             {isRequiredField && <FaStarOfLife className="w-1.5 text-red-700" />}
@@ -49,7 +49,7 @@ function TextArea({
         onChange={setValue ? handelOnChangeFunction : onChange}
         className={`${
           showError && errorMessage !== "" ? "border border-red-500" : "border border-black/30"
-        } rounded-lg md:rounded-xl px-7 py-3 bg-white w-full placeholder:text-[#898989] text-black focus:outline-none focus:ring-1 focus:ring-offset-0 focus:ring-[#191A23] font-space-grotesk text-lg resize-none disabled:bg-[#7fab98]/15 disabled:border disabled:border-[#7fab98] disabled:cursor-not-allowed`}
+        } rounded-lg md:rounded-xl px-7 py-3 bg-white w-full placeholder:text-[#898989] text-black focus:outline-none focus:ring-offset-0 focus:ring-0 focus:border-black/80 font-space-grotesk text-lg resize-none disabled:bg-[#7fab98]/15 disabled:border disabled:border-[#7fab98] disabled:cursor-not-allowed`}
         placeholder={placeHolder}
         cols={cols}
         rows={rows}
