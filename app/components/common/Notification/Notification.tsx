@@ -3,13 +3,13 @@ import { useContext } from "react";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
+import { getEnterAnimationClass } from "@/app/constant/Constant";
 import {
   NotificationContext,
   NotificationContextApiProps,
   NotificationObject,
 } from "@/app/context/notification/NotificationContextApi";
 import { classNames } from "@/app/helper/Helper";
-import { getEnterAnimationClass } from "@/app/constant/Constant";
 
 function Notification() {
   // getting the value from the context api

@@ -1,7 +1,7 @@
 "use client";
+import validator from "validator";
 import Cleave from "cleave.js";
 import { Variants } from "motion/react";
-import validator from "validator";
 
 import { phoneFormats } from "../constant/NumberFormate";
 export const classNames = (defaultClass: string, conditionBasedClass: { [keys: string]: boolean }) => {

@@ -19,7 +19,7 @@ export interface ourImpactInNumberArrayInterface {
 }
 
 export interface OurProjectInfoArrayInterface {
-  id: number;
+  id: string;
   title: string;
   description: string;
   image: StaticImageData;
