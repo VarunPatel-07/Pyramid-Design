@@ -1,7 +1,7 @@
 "use client";
 import PyramidDesignLogo from "@/app/assets/images/logo/pyramid-design-logo-transperent.png";
 import { NavbarNavLinksArray } from "@/app/constant/Constant";
-import { classNames } from "@/app/helperFiles/Helper";
+import { classNames } from "@/app/helper/Helper";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
 import Link from "next/link";

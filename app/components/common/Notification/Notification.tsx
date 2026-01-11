@@ -9,7 +9,7 @@ import {
   NotificationContextApiProps,
   NotificationObject,
 } from "@/app/context/notification/NotificationContextApi";
-import { classNames } from "@/app/helperFiles/Helper";
+import { classNames } from "@/app/helper/Helper";
 
 function Notification() {
   // getting the value from the context api

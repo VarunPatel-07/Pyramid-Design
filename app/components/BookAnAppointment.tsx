@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { IoArrowForward } from "react-icons/io5";
-import { classNames } from "../helperFiles/Helper";
+import { classNames } from "../helper/Helper";
 
 function BookAnAppointment() {
   return (
