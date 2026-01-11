@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { IoArrowForward } from "react-icons/io5";
 import { OurProjectInfoArray } from "../constant/Project";
-import { classNames, IsOdd, noAnimation } from "../helper/Helper";
+import { classNames, IsOdd, noAnimation } from "../helperFiles/Helper";
 
 function OurProjects({ FilterLimit, showTitle = true }: { FilterLimit?: number; showTitle?: boolean }) {
   const [page, setPage] = useState<number>(1);

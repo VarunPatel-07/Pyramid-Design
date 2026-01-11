@@ -4,10 +4,10 @@ import { FaStarOfLife } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 // import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import { FixedSizeList as VirtualList } from "react-window";
 import clsx from "clsx";
+import { FixedSizeList as VirtualList } from "react-window";
 
-import { classNames } from "@/app/helper/Helper";
+import { classNames } from "@/app/helperFiles/Helper";
 import { SearchDropProps } from "@/app/Interface/Interface";
 
 export default function SearchDrop(props: SearchDropProps) {

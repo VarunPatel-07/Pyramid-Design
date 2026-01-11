@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import { NavbarNavLinksArray } from "../constant/Constant";
-import { classNames } from "../helper/Helper";
+import { classNames } from "../helperFiles/Helper";
 import { SocialMediaLinksArrayInterface } from "../Interface/Interface";
 const SocialMediaLinksArray: SocialMediaLinksArrayInterface[] = [
   {

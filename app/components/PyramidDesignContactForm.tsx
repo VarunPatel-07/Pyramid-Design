@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useContext, useEffect, useRef, useState } from "react";
 import { countryObject, PyramidDesignContactFormDataInterface } from "../Interface/Interface";
 import { NotificationContext, NotificationContextApiProps } from "../context/notification/NotificationContextApi";
-import { formateAndVerifyPhoneNumber, isValidEmail, verifyPhoneNumberLength } from "../helper/Helper";
+import { formateAndVerifyPhoneNumber, isValidEmail, verifyPhoneNumberLength } from "../helperFiles/Helper";
 import EmbedMap from "./EmbedMap";
 import Input from "./common/Input";
 import SearchDrop from "./common/SearchDrop";

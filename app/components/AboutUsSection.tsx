@@ -3,7 +3,7 @@
 import AboutUsSectionImage from "@/app/assets/images/about-us-section.png";
 import Image from "next/image";
 import { HiArrowRight } from "react-icons/hi";
-import { classNames, IsOdd } from "../helper/Helper";
+import { classNames, IsOdd } from "../helperFiles/Helper";
 
 function AboutUsSection() {
   return (

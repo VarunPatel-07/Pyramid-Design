@@ -7,7 +7,7 @@ import StarIcon from "@/app/assets/images/svg/star.svg";
 import { motion, Variants } from "motion/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { noAnimation } from "../helper/Helper";
+import { noAnimation } from "../helperFiles/Helper";
 
 function MainHeroSection() {
   const [isDesktopScreen, setIsDesktopScreen] = useState<boolean>(false);
