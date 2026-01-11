@@ -5,7 +5,7 @@ import { OurProjectInfoArrayInterface } from "../Interface/Interface";
 
 export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
   {
-    id: 1,
+    id: "urban-courtyard-residence",
     title: "Urban Courtyard Residence",
     description:
       "A contemporary residential project designed around a central courtyard, blending natural light, ventilation, and modern living within an urban context.",
@@ -13,7 +13,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/urban-courtyard-residence",
   },
   {
-    id: 2,
+    id: "hillside-villa-retreat",
     title: "Hillside Villa Retreat",
     description:
       "A luxury hillside villa integrating natural terrain, panoramic views, and sustainable materials to create a seamless indoor–outdoor living experience.",
@@ -21,7 +21,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/hillside-villa-retreat",
   },
   {
-    id: 3,
+    id: "commercial-office-complex",
     title: "Commercial Office Complex",
     description:
       "A multi-story commercial office building designed for productivity, natural lighting, and energy efficiency in a fast-growing business district.",
@@ -29,7 +29,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/commercial-office-complex",
   },
   {
-    id: 4,
+    id: "minimalist-family-home",
     title: "Minimalist Family Home",
     description:
       "A minimalist residential design focusing on clean geometry, functional spaces, and a neutral material palette for modern family living.",
@@ -37,7 +37,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/minimalist-family-home",
   },
   {
-    id: 5,
+    id: "eco-friendly-housing",
     title: "Eco-Friendly Housing Development",
     description:
       "A sustainable housing project utilizing passive design strategies, rainwater harvesting, and locally sourced materials.",
@@ -45,7 +45,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/eco-friendly-housing",
   },
   {
-    id: 6,
+    id: "luxury-apartment-tower",
     title: "Luxury Apartment Tower",
     description:
       "A high-rise residential tower combining luxury amenities, efficient layouts, and striking architectural form within the city skyline.",
@@ -53,7 +53,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/luxury-apartment-tower",
   },
   {
-    id: 7,
+    id: "boutique-hotel-spa",
     title: "Boutique Hotel & Spa",
     description:
       "A boutique hospitality project designed to offer a serene guest experience through warm materials, landscape integration, and spatial harmony.",
@@ -61,7 +61,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/boutique-hotel-spa",
   },
   {
-    id: 8,
+    id: "community-cultural-center",
     title: "Cultural Community Center",
     description:
       "A public community center designed as a social hub, hosting cultural events, exhibitions, and shared community activities.",
@@ -69,7 +69,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/community-cultural-center",
   },
   {
-    id: 9,
+    id: "urban-landscape-park",
     title: "Urban Landscape Park",
     description:
       "A landscape architecture project transforming an unused urban site into a vibrant public park with walkways, green zones, and seating areas.",
@@ -77,7 +77,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/urban-landscape-park",
   },
   {
-    id: 10,
+    id: "educational-campus",
     title: "Modern Educational Campus",
     description:
       "An educational campus designed to foster collaboration and learning through open courtyards, flexible classrooms, and natural surroundings.",
@@ -85,7 +85,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/educational-campus",
   },
   {
-    id: 11,
+    id: "waterfront-mixed-use",
     title: "Waterfront Mixed-Use Development",
     description:
       "A mixed-use development integrating residential, retail, and leisure spaces along a waterfront with strong pedestrian connectivity.",
@@ -93,7 +93,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/waterfront-mixed-use",
   },
   {
-    id: 12,
+    id: "corporate-headquarters",
     title: "Corporate Headquarters Building",
     description:
       "A corporate headquarters reflecting brand identity through bold architectural expression, sustainable systems, and flexible office layouts.",
@@ -101,7 +101,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/corporate-headquarters",
   },
   {
-    id: 13,
+    id: "private-farmhouse-residence",
     title: "Private Farmhouse Residence",
     description:
       "A farmhouse-inspired residence blending traditional architecture with modern comforts, set within expansive natural surroundings.",
@@ -109,7 +109,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/private-farmhouse-residence",
   },
   {
-    id: 14,
+    id: "retail-lifestyle-center",
     title: "Retail & Lifestyle Center",
     description:
       "An open-air retail and lifestyle center designed to enhance user experience through spatial flow, landscaping, and natural shading.",
@@ -117,7 +117,7 @@ export const OurProjectInfoArray: OurProjectInfoArrayInterface[] = [
     link: "/project/retail-lifestyle-center",
   },
   {
-    id: 15,
+    id: "urban-redevelopment",
     title: "Urban Redevelopment Project",
     description:
       "A large-scale urban redevelopment initiative revitalizing existing infrastructure with modern design and sustainable planning.",
