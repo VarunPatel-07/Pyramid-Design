@@ -1,0 +1,29 @@
+.pyramid-design-container {
+  max-width: 100% !important;
+  padding: 0 16px !important;
+  /* background-color: red; */
+}
+.pyramid-design-parent-container {
+  max-width: 1920px !important;
+  margin: 0 auto !important;
+}
+@media only screen and (min-width: 1199px) {
+  .pyramid-design-container {
+    width: calc(100% - 120px) !important;
+    max-width: 1460px !important;
+    margin: 0 auto !important;
+    padding: 0 0 !important;
+  }
+}
+
+@media only screen and (min-width: 1399px) {
+  .pyramid-design-container {
+    width: calc(100% - 160px) !important;
+  }
+}
+
+@media only screen and (min-width: 1599px) {
+  .pyramid-design-container {
+    width: calc(100% - 200px) !important;
+  }
+}
