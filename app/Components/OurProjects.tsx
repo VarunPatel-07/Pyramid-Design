@@ -74,8 +74,8 @@ function OurProjects({ FilterLimit, showTitle = true }: { FilterLimit?: number; 
                     className={classNames(
                       "w-full flex items-stretch justify-start gap-4 lg:gap-8 xl:gap-12 bg-(--theme-dark-color) lg:bg-transparent p-2.5 lg:p-0 rounded-lg md:rounded-xl lg:rounded-none",
                       {
-                        "flex-col-reverse lg:flex-row-reverse": IsOdd(item?.id),
-                        "flex-col-reverse lg:flex-row": !IsOdd(item?.id),
+                        "flex-col-reverse lg:flex-row-reverse": IsOdd(index + 1),
+                        "flex-col-reverse lg:flex-row": !IsOdd(index + 1),
                       }
                     )}>
                     <div className="w-full lg:w-[40%] bg-(--theme-dark-color) rounded-lg md:rounded-xl lg:rounded-2xl xl:rounded-3xl overflow-hidden">
