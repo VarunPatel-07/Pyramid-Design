@@ -4,6 +4,11 @@ import PyramidDesignContactForm from "@/app/components/PyramidDesignContactForm"
 import { OurProjectInfoArray } from "@/app/constant/Project";
 import Image from "next/image";
 
+export async function generateStaticParams() {
+  return OurProjectInfoArray.map((item) => ({
+    projectId: item.id, // must match your dynamic folder name
+  }));
+}
 export default async function Page({ params }: { params: Promise<{ projectId: string }> }) {
   const { projectId: projectIdSlug } = await params;
   const project = OurProjectInfoArray?.find((item) => item?.link === `/project/${projectIdSlug}`);
